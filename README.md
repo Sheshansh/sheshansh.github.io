@@ -1,3 +1,3 @@
-# sheshansh.github.io
+# Sheshansh Agrawal
 
-Sheshansh Agrawal
+AI researcher, engineer
