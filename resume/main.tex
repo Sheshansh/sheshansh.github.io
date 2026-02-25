@@ -1,0 +1,119 @@
+\documentclass[11pt,a4paper,sans]{moderncv}        % font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', ...) and font family ('sans' and 'roman')
+
+%-------------------------------------------------------------------------------
+% ModernCV theme settings
+%-------------------------------------------------------------------------------
+\moderncvstyle{banking}                            % style: 'casual' (default), 'classic', 'oldstyle', 'banking'
+\moderncvcolor{blue}                              % color: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey', 'black'
+% \renewcommand{\familydefault}{\sfdefault}       % Uncomment to use sans serif font
+% \nopagenumbers{}                                % Uncomment to suppress automatic page numbering for CVs longer than one page
+
+%-------------------------------------------------------------------------------
+% Encoding and fonts
+%-------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+
+%-------------------------------------------------------------------------------
+% Page margins
+%-------------------------------------------------------------------------------
+\usepackage[scale=0.9,bottom=0.4in,top=0.5in]{geometry}
+% \setlength{\hintscolumnwidth}{3cm}             % Change width of the dates column
+% \setlength{\makecvtitlenamewidth}{10cm}        % Force the width allocated to your name (classic style)
+
+%-------------------------------------------------------------------------------
+% Personal data
+%-------------------------------------------------------------------------------
+\name{Sheshansh}{Agrawal}
+% \title{Curriculum Vitae}
+% \address{Senior Applied Scientist, Microsoft}{}{}
+% \homepage{www.sheshansh.com}
+
+%---  Extra info line -----------------------------------------------------------
+%  Replaced icon macros with plain text links for faster compilation.
+\extrainfo{\email{sheshanshagrawal@gmail.com}{sheshanshagrawal@gmail.com} \textbar{} 
+  \href{http://www.sheshansh.com}{Website} \textbar{} 
+  \href{https://scholar.google.com/citations?user=5h8jXlxko_oC}{Google~Scholar} \textbar{} 
+  \href{https://twitter.com/sheshanshag}{Twitter} \textbar{} 
+  \href{https://www.linkedin.com/in/sheshansh-agrawal-b5a79b97/}{LinkedIn}}
+% \phone{+1(425)-591-2534}
+% \photo[64pt][0.4pt]{picture}
+% \quote{Some quote}
+
+%-------------------------------------------------------------------------------
+% Content
+%-------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\vspace{-25pt}
+
+%-----       EXPERIENCE       ---------------------------------------------------
+\section{Experience}
+\textbf{Tech Lead Manager, Retrieval Research}, Contextual AI \hfill \textit{Jun 2024 -- Present}
+\begin{itemize}
+  \item Leading research on retrieval, reranking, text-to-SQL, and their applications in search agents.
+  \item Launched SoTA and the first commercial instruction‑following relevance reranking model (\href{https://contextual.ai/blog/introducing-instruction-following-reranker/}{Blog}, \href{https://x.com/douwekiela/status/1899490844572577958}{Tweet}, \href{https://apnews.com/press-release/pr-newswire/contextual-ai-launches-worlds-first-instruction-following-reranker-ecb56585dc31bee5968c13d7000f30b3}{AP~News}, \href{https://seekingalpha.com/pr/20030352-contextual-ai-launches-worlds-first-instruction-following-reranker}{Seeking~Alpha}).
+  \item Built a SoTA text‑to‑SQL agent, which topped the \href{https://bird-bench.github.io/}{BIRD‑Bench} leaderboard (\href{https://x.com/apsdehal/status/1895561744120234399}{Tweet}, \href{https://www.linkedin.com/feed/update/urn:li:activity:7301377754749353984/}{LinkedIn}).
+  \item Built an agentic alternative to GraphRAG in the pursuit of enabling search agents to exploit graphical structure which is available in some domains.
+  \item Published a faster LLM ranking algorithm BLITZRANK using tournement graphs, which was better than previous methods while being 25-40\% more token efficient.
+  \item Built DeepSearch style agents on enterprise data. Worked on orchestration, building environments, RL infrastructure.
+  \item Worked on ReAct style dynamic agent integration for our Agent Composer product.
+\end{itemize}
+\vspace{5pt}
+
+\textbf{Senior Applied Scientist}, Microsoft Bing Ads \hfill \textit{Mar 2022 -- May 2024}
+\begin{itemize}
+  \item Built and led language models for multi‑modal embedding‑based selection (dense retrieval) at Microsoft advertising.
+  \item Designed and implemented \emph{CORGEE} -- a large‑scale contrastive‑learning infrastructure for training embeddings at scale (C\#, Scope, SQL, Cython, Numba, Cnpy, PyTorch, Flash‑attention, DeepSpeed; up to 256 GPUs with high utilisation).
+  \item Worked on OOD‑DiskANN to improve out‑of‑domain generalization of ANNS indexing algorithms.
+\end{itemize}
+\vspace{5pt}
+
+\textbf{Research Engineer}, Microsoft Research India \hfill \textit{Aug 2019 -- Mar 2022}
+\begin{itemize}
+  \item Built and published the first technique for personalised dense retrieval: \textbf{XPERT}.
+  \item Developed extreme‑classification algorithms with label features (\emph{DECAF} and \emph{ECLARE}) that train representations and the item index jointly end‑to‑end.
+\end{itemize}
+
+%-----       EDUCATION       ----------------------------------------------------
+\vspace{-5pt}
+\section{Education}
+\textbf{B.Tech. (Hons.) in Computer Science and Engineering} \hfill \textit{2015--2019}\\
+Indian Institute of Technology Bombay, Mumbai, India \hfill \textit{CGPA: 9.68/10}\\
+\textit{Minor:} Applied Statistics and Informatics\\
+Department Rank: 3/123
+
+%-----       PUBLICATIONS       --------------------------------------------------
+\vspace{-5pt}
+\section{Publications}
+\begin{itemize}
+  \item \textbf{OOD‑DiskANN}: Efficient and scalable graph ANNS for out‑of‑distribution queries -- Preprint.\\
+        \textit{S. Jaiswal, R. Krishnaswamy, A. Garg, H.V. Simhadri, Sheshansh Agrawal}
+  \item \textbf{XPERT}: Personalised Retrieval over Millions of Items -- \textit{SIGIR 2023}.\\
+        \textit{H.~Vemuri*, Sheshansh Agrawal*, S.~Mittal*, D.~Saini, A.~Soni, M.~Varma}
+  \item \textbf{ECLARE}: Extreme classification with label graph correlations -- \textit{WWW 2021}.\\
+        \textit{A.~Mittal, N.~Sachdeva, Sheshansh Agrawal, S.~Agarwal, P.~Kar, M.~Varma}
+  \item \textbf{DECAF}: Deep extreme classification with label features -- \textit{WSDM 2021}.\\
+        \textit{A.~Mittal, K.~Dahiya, Sheshansh Agrawal, D.~Saini, S.~Agarwal, P.~Kar, M.~Varma}
+  \item Lexicographic ranking supermartingales: an efficient approach to termination of probabilistic programs -- \textit{POPL 2018}.\\
+        \textit{Sheshansh Agrawal, K.~Chatterjee, P.~Novotný}
+\end{itemize}
+
+%-----       AWARDS & POSITIONS       -------------------------------------------
+\vspace{-5pt}
+\section{Awards and Positions}
+\begin{itemize}
+  \item \textbf{FY23 Q4, FY21 Q4 Engineering Excellence Award}, Microsoft Ads.
+  \item Medals for India at International Olympiads:
+    \begin{itemize}
+      \item Silver -- International Physics Olympiad, Mumbai (2015)
+      \item Gold -- International Olympiad in Astronomy \& Astrophysics, Suceava (2014)
+      \item Bronze -- International Olympiad in Astronomy \& Astrophysics, Volos (2013)
+      \item Silver -- International Astronomy Olympiad, Seoul (2012)
+    \end{itemize}
+  \item \textbf{Institute Academic Award}, IIT Bombay (2016)
+  \item Ranked 4 / 1.4 million candidates in JEE Mains, 2015 (India‑wide).
+  \item Elected General Secretary, Computer Science Department Association (2018--19)
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+\end{document}

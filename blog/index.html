@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog — Sheshansh Agrawal">
+  <title>Blog — Sheshansh Agrawal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg-primary: #faf9f7;
+      --bg-secondary: #f2f0ec;
+      --bg-tertiary: #e8e5df;
+      --bg-hover: rgba(60, 55, 48, 0.03);
+      --text-primary: #2c2825;
+      --text-secondary: #5a534a;
+      --text-muted: #8a837a;
+      --accent: #6b5d4d;
+      --accent-hover: #5a4d3f;
+      --border-subtle: rgba(44, 40, 37, 0.06);
+      --border-medium: rgba(44, 40, 37, 0.12);
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--bg-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text-primary);
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 4px;
+      padding: 16px 24px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    nav a {
+      padding: 8px 14px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-decoration: none;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+    nav a:hover {
+      color: var(--text-primary);
+      border-color: var(--border-subtle);
+      background: var(--bg-hover);
+    }
+    nav a.active {
+      color: var(--text-primary);
+      background: var(--bg-tertiary);
+      border-color: var(--border-medium);
+    }
+
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 20px 24px 60px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 28px;
+    }
+
+    .posts {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .post {
+      display: block;
+      padding: 18px 20px;
+      background: var(--bg-secondary);
+      border: 1px solid transparent;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .post:hover {
+      border-color: var(--border-medium);
+      background: var(--bg-tertiary);
+      text-decoration: none;
+    }
+    .post-title {
+      color: var(--text-primary);
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .post-meta {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+    }
+    .post-summary {
+      color: var(--text-secondary);
+      font-size: 0.88rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html">About</a>
+    <a href="./index.html" class="active">Blog</a>
+  </nav>
+
+  <main>
+    <h1>Blog</h1>
+
+    <div class="posts">
+      <a class="post" href="https://contextual.ai/blog/an-agentic-alternative-to-graphrag">
+        <div class="post-title">An Agentic Alternative to GraphRAG</div>
+        <div class="post-meta">November 2025 · Contextual AI</div>
+        <div class="post-summary">A Metadata Search Tool for agents that achieves GraphRAG-like reference traversal without the architectural complexity — no static graphs, no heuristic pipelines.</div>
+      </a>
+
+      <a class="post" href="https://contextual.ai/blog/rerank-v2">
+        <div class="post-title">Open-Sourcing Reranker v2</div>
+        <div class="post-meta">August 2025 · Contextual AI</div>
+        <div class="post-summary">State-of-the-art, cost-effective, instruction-following, multilingual family of rerankers — open-sourced in three sizes with quantized variants.</div>
+      </a>
+
+      <a class="post" href="https://contextual.ai/blog/open-sourcing-the-best-local-text-to-sql-system">
+        <div class="post-title">Open-Sourcing the Best Local Text-to-SQL System</div>
+        <div class="post-meta">July 2025 · Contextual AI</div>
+        <div class="post-summary">The best fully-local Text-to-SQL solution on the BIRD benchmark. Lessons on context engineering and inference-time scaling for structured data retrieval.</div>
+      </a>
+
+      <a class="post" href="https://contextual.ai/blog/introducing-instruction-following-reranker">
+        <div class="post-title">Introducing the World's First Instruction-Following Reranker</div>
+        <div class="post-meta">March 2025 · Contextual AI</div>
+        <div class="post-summary">The first reranker that can follow custom instructions about how to rank retrievals — state-of-the-art on BEIR with or without instructions.</div>
+      </a>
+    </div>
+  </main>
+
+</body>
+</html>
